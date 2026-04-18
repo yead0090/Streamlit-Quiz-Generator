@@ -34,7 +34,7 @@ def audio_transcription(text):
 
 #quiz generator
 def quiz_generator(images,difficulty):
-    prompt=f"generate 3 quizzes based on the{difficulty}. make sure to add markdown to differentiate the options.add correct answers too. "
+    prompt=f"generate 3 quizzes based on the{difficulty}. make sure to add markdown to differentiate the options. Add correct answer too,after the quiz "
 
     response=client.models.generate_content(
         model="gemini-3-flash-preview",
